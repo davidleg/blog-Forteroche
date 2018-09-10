@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<routes>
+	                     <route url="/jf_admin/off\.html" module="Connexion" action="offConnexion" /> 
+                    <route url="/jf_admin/profil\.html" module="Connexion" action="profil"/>
+    <route url="/jf_admin/profil-update-([0-9]+)\.html" module="Connexion" action="update" vars="id"/>
+
+  	                   	          <route url="/jf_admin/" module="News" action="index" ></route>
+  	         	 <route url="/jf_admin/news-insert\.html" module="News" action="insert" ></route>
+  		<route url="/jf_admin/news-update-([0-9]+)\.html" module="News" action="update" vars="id" ></route>	
+	<route url="/jf_admin/news-delete-ask-([0-9]+)\.html" module="News" action="deleteAskNews" vars="id" /> 
+  	 
+  	           <route url="/jf_admin/news-comments-([0-9]+)\.html" module="News" action="newsComments" vars="id" /> 
+  	          <route url="/jf_admin/comment-update-([0-9]+)\.html" module="News" action="updateComment" vars="id" ></route>
+ <route url="/jf_admin/comment-delete-ask-([0-9]+)-([0-9]+)\.html" module="News" action="deleteAskComment" vars="idnews,id" ></route>
+
+<route url="/jf_admin/comment-signal\.html" module="News" action="ajaxCommentSignal" ></route>
+<route url="/jf_admin/comment-signal-show\.html" module="News" action="commentSignalShow" ></route>
+
+ 	
+ </routes>
